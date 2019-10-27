@@ -11,8 +11,7 @@ unsigned long eepromMillis; // store time of last setting change
 unsigned long audioMillis; // store time of last audio update
 byte currentEffect = 0; // index to the currently running effect
 boolean autoCycle = true; // flag for automatic effect changes
-boolean eepromOutdated = false; // flag for when EEPROM may need to be updated
-byte currentBrightness = STARTBRIGHTNESS; // 0-255 will be scaled to 0-MAXBRIGHTNESS
+boolean eepromOutdated = false; // flag for when EEPROM may need to be updated 
 boolean audioEnabled = true; // flag for running audio patterns
 boolean audioActive = false;
 uint8_t fadeActive = 0;
@@ -420,4 +419,3 @@ void checkEEPROM() {
     }
   }
 }
-
