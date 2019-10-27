@@ -225,31 +225,19 @@ void selectRandomPalette() {
  
   }
 }
+
 void ChangePaletteAndSettingsPeriodically() {
   uint8_t secondHand = ((millis() / 1000) / HOLD_PALETTES_X_TIMES_AS_LONG) % 60;
   static uint8_t lastSecond = 99;
   
   if( lastSecond != secondHand) {
     lastSecond = secondHand;
-    if( secondHand ==  0)  { currentPalette = RainbowColors_p;        speed = 5; scale = 30; colorLoop = 0; }
-    if( secondHand == 20)  { SetupPurpleAndGreenPalette();            speed = 5; scale = 50; colorLoop = 1; }
-    if( secondHand == 30)  { SetupBlackAndWhiteStripedPalette();      speed = 5; scale = 30; colorLoop = 1; }
-    if( secondHand == 40)  { selectRandomPalette();                   speed = 5; scale =120; colorLoop = 1; }
-    if( secondHand == 50)  { selectRandomPalette();                   speed = 5; scale = 30; colorLoop = 1; }
-    if( secondHand == 60)  { selectRandomPalette();                   speed = 5; scale = 50; colorLoop = 1; }
-    if( secondHand == 70)  { selectRandomPalette();                   speed = 5; scale = 90; colorLoop = 0; }
-    if( secondHand == 80)  { selectRandomPalette();                   speed = 5; scale = 30; colorLoop = 0; }
-    if( secondHand == 90)  { selectRandomPalette();                   speed = 5; scale = 20; colorLoop = 0; }
-    if( secondHand == 10)  { selectRandomPalette();                   speed = 5; scale = 50; colorLoop = 0; }
-    if( secondHand == 110) { selectRandomPalette();                   speed = 5; scale = 90; colorLoop = 0; }
-    if( secondHand == 120) { selectRandomPalette();                   speed = 5; scale = 20; colorLoop = 0; }
-    if( secondHand == 140) { selectRandomPalette();                   speed = 5; scale = 20; colorLoop = 0; }
-    if( secondHand == 160) { selectRandomPalette();                   speed = 5; scale = 20; colorLoop = 0; }
-    if( secondHand == 180) { selectRandomPalette();                   speed = 5; scale = 20; colorLoop = 0; }
-    if( secondHand == 200) { selectRandomPalette();                   speed = 5; scale = 20; colorLoop = 0; }
-    if( secondHand == 220) { selectRandomPalette();                   speed = 5; scale = 20; colorLoop = 0; }
-    if( secondHand == 240) { selectRandomPalette();                   speed = 5; scale = 20; colorLoop = 0; }
-    if( secondHand == 260) { selectRandomPalette();                   speed = 5; scale = 20; colorLoop = 1; }
+    if( secondHand ==  0)  { currentPalette = RainbowColors_p;        speed = 5; scale = 90; colorLoop = 1; }
+    if( secondHand == 20)  { selectRandomPalette();                   speed = 5; scale = 320; colorLoop = 1; }
+    if( secondHand == 30)  { selectRandomPalette();                   speed = 5; scale = 120; colorLoop = 1; }
+    if( secondHand == 40)  { selectRandomPalette();                   speed = 5; scale =220; colorLoop = 1; }
+    if( secondHand == 50)  { selectRandomPalette();                   speed = 5; scale = 340; colorLoop = 1; }
+    if( secondHand == 60)  { selectRandomPalette();                   speed = 5; scale = 10; colorLoop = 1; }
   }
 }
 

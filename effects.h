@@ -31,6 +31,7 @@ void eyesAnim(){
     effectInit = true;
     effectDelay = 5;
   }
+
   
   if (millis() > lastFrame+frameDelay) {
     frameIndex++;
@@ -39,6 +40,7 @@ void eyesAnim(){
   }
   
   CRGB fgColor = CHSV(cycleHue, 255, 255); 
+
   //CRGB bgColor = CHSV(cycleHue+128, 255, 255); 
   graphicsFrame(frameSeq[frameIndex],fgColor,CRGB::Black);
 }
@@ -458,6 +460,7 @@ void radiateCenter() {
   offset--; // wraps at 255 for sin8
   plasVector += 1; // using an int for slower orbit (wraps at 65536)
 }
+
 // radiating inward rainbow colors
 void radiateCenterMultiPalette() {
   static byte offset  = 9; // counter for radial color wave motion

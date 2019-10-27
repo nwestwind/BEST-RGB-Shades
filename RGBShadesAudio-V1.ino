@@ -70,8 +70,8 @@ functionList effectListNoAudio[] = {
   glitter,
   threeDee,
   colorFill,
-  sideRain
- // scrollTextZero, 
+  sideRain,
+  scrollTextZero
   //scrollTextOne, 
  // scrollTextTwo,
  // scrollTextThree
